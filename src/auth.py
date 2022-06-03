@@ -92,20 +92,3 @@ def me():
         'email': user.email
     }), 200
 
-
-@auth.get("/getdata")
-@cross_origin()
-@jwt_required()
-def getData():
-    allRows = Data.query.all()
-
-    dataRows = []
-
-    for row in allRows:
-        dataRows.append(
-            {"number": row.number, "result": row.result, "id": row.id})
-
-    return jsonify({
-        "result": len(dataRows),
-        "data": dataRows
-    })
