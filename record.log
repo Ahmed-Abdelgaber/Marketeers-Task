@@ -1,0 +1,32 @@
+2022-06-03 22:56:06,329 DEBUG flask_cors.extension Thread-15 (process_request_thread) : $ Request to '/api/auth/login' matches CORS resource '/api/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': True, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': {'/api/*': {'origins': '*'}}, 'intercept_exceptions': True, 'always_send': True} $
+2022-06-03 22:56:06,329 DEBUG flask_cors.core Thread-15 (process_request_thread) : $ Settings CORS headers: MultiDict([]) $
+2022-06-03 22:56:06,332 INFO werkzeug Thread-15 (process_request_thread) : $ 127.0.0.1 - - [03/Jun/2022 22:56:06] "POST /api/auth/login HTTP/1.1" 200 - $
+2022-06-03 22:56:18,072 DEBUG flask_cors.extension Thread-16 (process_request_thread) : $ Request to '/api/data' matches CORS resource '/api/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': True, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': {'/api/*': {'origins': '*'}}, 'intercept_exceptions': True, 'always_send': True} $
+2022-06-03 22:56:18,072 DEBUG flask_cors.core Thread-16 (process_request_thread) : $ Settings CORS headers: MultiDict([]) $
+2022-06-03 22:56:18,073 DEBUG flask_cors.extension Thread-16 (process_request_thread) : $ Request to '/api/data' matches CORS resource '/api/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': True, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': {'/api/*': {'origins': '*'}}, 'intercept_exceptions': True, 'always_send': True} $
+2022-06-03 22:56:18,073 DEBUG flask_cors.core Thread-16 (process_request_thread) : $ Settings CORS headers: MultiDict([]) $
+2022-06-03 22:56:18,074 INFO werkzeug Thread-16 (process_request_thread) : $ 127.0.0.1 - - [03/Jun/2022 22:56:18] "[32mGET /api/data HTTP/1.1[0m" 308 - $
+2022-06-03 22:56:18,105 DEBUG flask_cors.core Thread-17 (process_request_thread) : $ Settings CORS headers: MultiDict([('Access-Control-Allow-Origin', '*')]) $
+2022-06-03 22:56:18,105 DEBUG flask_cors.extension Thread-17 (process_request_thread) : $ CORS have been already evaluated, skipping $
+2022-06-03 22:56:18,107 INFO werkzeug Thread-17 (process_request_thread) : $ 127.0.0.1 - - [03/Jun/2022 22:56:18] "GET /api/data/ HTTP/1.1" 200 - $
+2022-06-03 22:57:02,097 INFO werkzeug MainThread : $  * Detected change in 'D:\\career\\Markteers-Task\\src\\app.py', reloading $
+2022-06-03 22:57:02,210 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 22:57:07,095 INFO werkzeug MainThread : $  * Detected change in 'D:\\career\\Markteers-Task\\src\\app.py', reloading $
+2022-06-03 22:57:07,255 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 22:57:12,104 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 22:58:49,014 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 22:59:08,693 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 23:00:01,657 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 23:01:34,653 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 23:02:36,158 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 23:03:18,214 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 23:05:02,308 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 23:05:18,100 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 23:05:39,173 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 23:06:01,731 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 23:06:47,154 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 23:08:16,104 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 23:11:42,682 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 23:12:02,462 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 23:12:08,288 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 23:51:41,099 INFO werkzeug MainThread :  * Restarting with stat

@@ -1,0 +1,9 @@
+th,
+td {
+    width: 20rem;
+    text-align: center;
+}
+
+button {
+    margin-top: 15px;
+}
