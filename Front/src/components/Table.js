@@ -32,7 +32,7 @@ const Table = () => {
     };
 
     useEffect(() => {
-        fetch('http://127.0.0.1:5000/api/data/getdata', {
+        fetch('http://127.0.0.1:5000/api/data/get-data', {
             method: 'GET',
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
@@ -47,6 +47,23 @@ const Table = () => {
             .then(response => response.json())
             .then(json => setData(json.data));
     }, []);
+
+    const updateHandler = () => {
+        fetch('http://127.0.0.1:5000/api/data/update-data', {
+            method: 'POST',
+            body: JSON.stringify({
+                updatedData: data,
+            }),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+                Accept: 'application/json',
+                'X-Requested-With': 'XMLHttpRequest',
+                'Access-Control-Allow-Origin': '*',
+                Authorization: `Bearer ${Cookies.get('JWT')}`,
+                withCredentials: true,
+            },
+        });
+    };
 
     return (
         <Fragment>
@@ -67,6 +84,7 @@ const Table = () => {
                                         type="number"
                                         onChange={inputHandler}
                                         data-id={el.id}
+                                        max={el.number}
                                     ></input>
                                 </td>
                                 <td>{el.number}</td>
@@ -79,6 +97,7 @@ const Table = () => {
 
             <div className="form-actions">
                 <button onClick={logoutHandler}>LogOut</button>
+                <button onClick={updateHandler}>Update</button>
             </div>
         </Fragment>
     );

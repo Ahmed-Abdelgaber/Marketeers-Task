@@ -1,0 +1,8 @@
+.have-account,
+.have-account:hover {
+    background-color: transparent;
+    color: #240370;
+    border: none;
+    text-decoration: underline;
+    font-size: 0.9rem;
+}
